@@ -1,9 +1,14 @@
 provider "azurerm" {
-  version = "~>2.0"
   features {}
 }
 
-resource "azurerm_resource_group" "rg" {
-  name = "RG-Terraform"
-  location = "East US"
+terraform {
+  backend "azurerm" {
+
+  }
+}
+
+resource "azurerm_resource_group" "RG" {
+  name     = "RG-Terraform"
+  location = "eastus"
 }
