@@ -1,2 +1,2 @@
-abc="Terraform-abc425"
+name="Terraform-425"
 location="eastus"
